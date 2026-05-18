@@ -7,7 +7,6 @@
   <meta name="description" content="{{META_DESCRIPTION}}" />
   <link rel="canonical" href="{{POST_URL}}" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="{{TITLE}}" />
   <meta property="og:description" content="{{META_DESCRIPTION}}" />
   <meta property="og:image" content="{{OG_IMAGE}}" />
@@ -15,7 +14,6 @@
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="de_DE" />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,13 +22,12 @@
     "description": "{{META_DESCRIPTION}}",
     "image": "{{OG_IMAGE}}",
     "datePublished": "{{DATE_ISO}}",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Heimwerker-Tipps.de"
-    }
+    "publisher": { "@type": "Organization", "name": "Heimwerker-Tipps.de" }
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../../style.css" />
 
   <!-- Google AdSense – nach Freischaltung Konto-ID eintragen -->
@@ -38,70 +35,118 @@
 </head>
 <body>
 
+<!-- Lesefortschritt-Balken -->
+<div class="reading-progress" id="reading-progress"></div>
+
+<!-- ── Navigation ─────────────────────────────────────────────────────── -->
 <header class="site-header">
   <div class="container">
-    <a href="{{SITE_URL}}/" class="logo">🔨 Heimwerker-Tipps</a>
-    <nav>
-      <a href="{{SITE_URL}}/">Start</a>
-      <a href="{{SITE_URL}}/blog/">Alle Artikel</a>
+    <nav class="nav-inner">
+      <a href="{{SITE_URL}}/" class="logo">
+        <span class="logo-icon">🔨</span>
+        Heimwerker-Tipps
+      </a>
+      <div class="nav-links">
+        <a href="{{SITE_URL}}/">Start</a>
+        <a href="{{SITE_URL}}/blog/">Alle Artikel</a>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="container article-page">
-
-  <!-- AdSense Top Banner (nach Freischaltung aktivieren) -->
-  <!--
-  <div class="ad-banner">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-  -->
-
-  <article>
-    <div class="article-meta">
+<!-- ── Artikel Hero ───────────────────────────────────────────────────── -->
+<section class="article-hero">
+  <div class="article-hero-inner">
+    <div class="article-eyebrow">
       <span class="label">{{LABEL}}</span>
-      <time datetime="{{DATE_ISO}}">{{DATE_DE}}</time>
+      <time class="article-hero-date" datetime="{{DATE_ISO}}">{{DATE_DE}}</time>
     </div>
-
     <h1>{{H1}}</h1>
+    <p class="article-hero-sub">{{META_DESCRIPTION}}</p>
+  </div>
+  <img
+    class="article-hero-img"
+    src="{{OG_IMAGE}}"
+    alt="{{H1}}"
+    loading="eager"
+  />
+</section>
 
-    <img src="{{OG_IMAGE}}" alt="{{H1}}" class="hero-image" loading="lazy" />
+<!-- ── Artikel Inhalt ─────────────────────────────────────────────────── -->
+<main class="article-page">
 
-    <div class="article-content">
-      {{CONTENT}}
-    </div>
-
-    <!-- AdSense Mid-Article (nach Freischaltung aktivieren) -->
-    <!--
-    <div class="ad-mid">
-      <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-    -->
-
-  </article>
-
-  <!-- AdSense Bottom Banner (nach Freischaltung aktivieren) -->
+  <!-- AdSense Top (nach Freischaltung aktivieren) -->
   <!--
-  <div class="ad-banner">
+  <div class="ad-slot">
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
   -->
 
-  <div class="back-link">
-    <a href="{{SITE_URL}}/blog/">← Alle Artikel</a>
+  <div class="article-content">
+    {{CONTENT}}
   </div>
+
+  <!-- AdSense Mid (nach Freischaltung aktivieren) -->
+  <!--
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  -->
+
+  <nav class="article-nav">
+    <a href="{{SITE_URL}}/blog/" class="back-link">
+      ← Alle Ratgeber
+    </a>
+    <a href="{{SITE_URL}}/" class="back-link">
+      Startseite →
+    </a>
+  </nav>
 
 </main>
 
+<!-- ── Footer ─────────────────────────────────────────────────────────── -->
 <footer class="site-footer">
   <div class="container">
-    <p>© 2025 Heimwerker-Tipps.de &nbsp;|&nbsp; <a href="{{SITE_URL}}/impressum.html">Impressum</a> &nbsp;|&nbsp; <a href="{{SITE_URL}}/datenschutz.html">Datenschutz</a></p>
-    <p class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="{{SITE_URL}}/" class="logo">
+          <span class="logo-icon">🔨</span>
+          Heimwerker-Tipps
+        </a>
+        <p>Kostenlose Anleitungen für alle, die ihr Zuhause selbst renovieren wollen.</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{SITE_URL}}/blog/">Alle Artikel</a>
+        <a href="{{SITE_URL}}/impressum.html">Impressum</a>
+        <a href="{{SITE_URL}}/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Heimwerker-Tipps.de</span>
+      <span class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</span>
+    </div>
   </div>
 </footer>
+
+<script>
+// Lesefortschritt-Balken
+const bar = document.getElementById('reading-progress');
+const article = document.querySelector('.article-page');
+
+function updateProgress() {
+  if (!article) return;
+  const rect = article.getBoundingClientRect();
+  const total = article.offsetHeight - window.innerHeight;
+  const scrolled = Math.max(0, -rect.top);
+  const pct = Math.min(100, (scrolled / total) * 100);
+  bar.style.width = pct + '%';
+}
+
+window.addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
+</script>
 
 </body>
 </html>

@@ -4,113 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alle Heimwerker-Ratgeber – Anleitungen & Tipps</title>
-  <meta name="description" content="Alle Heimwerker-Ratgeber auf einen Blick: Renovieren, Streichen, Fliesen, Sanitär, Dämmen, Elektro und mehr. Kostenlos und direkt umsetzbar." />
+  <meta name="description" content="Alle Heimwerker-Ratgeber auf einen Blick: Renovieren, Streichen, Fliesen, Dämmen, Elektro und mehr. Kostenlos, verständlich, direkt umsetzbar." />
   <link rel="canonical" href="https://USERNAME.github.io/heimwerker-tipps-de/blog/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../style.css" />
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
+<!-- ── Navigation ─────────────────────────────────────────────────────── -->
 <header class="site-header">
   <div class="container">
-    <a href="/" class="logo">🔨 Heimwerker-Tipps</a>
-    <nav>
-      <a href="/">Start</a>
-      <a href="/blog/">Alle Artikel</a>
+    <nav class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🔨</span>
+        Heimwerker-Tipps
+      </a>
+      <div class="nav-links">
+        <a href="/">Start</a>
+        <a href="/blog/" class="active">Alle Artikel</a>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="blog-index container">
-
-  <h1>Alle Ratgeber</h1>
-  <p class="subtitle">Wöchentlich neue Anleitungen – zuletzt aktualisiert <span id="last-updated"></span></p>
-
-  <div style="margin-bottom:24px;">
-    <label for="filter-select" style="font-weight:600;margin-right:8px;">Thema:</label>
-    <select id="filter-select" style="padding:6px 12px;border:1px solid #ddd;border-radius:6px;font-size:0.95rem;">
-      <option value="">Alle</option>
-      <option value="Böden">Böden</option>
-      <option value="Streichen">Streichen</option>
-      <option value="Fliesen">Fliesen</option>
-      <option value="Bad">Bad</option>
-      <option value="Küche">Küche</option>
-      <option value="Dämmen">Dämmen</option>
-      <option value="Elektro">Elektro</option>
-      <option value="Garten">Garten</option>
-      <option value="Energie">Energie</option>
-      <option value="Dach">Dach</option>
-      <option value="Wartung">Wartung</option>
-      <option value="Holz">Holz</option>
-      <option value="Feuchte">Feuchte</option>
-      <option value="Sanitär">Sanitär</option>
-      <option value="Trockenbau">Trockenbau</option>
-    </select>
+<!-- ── Blog Hero ──────────────────────────────────────────────────────── -->
+<section class="blog-hero">
+  <div class="container">
+    <span class="section-label" style="color:#ff9a5c;">Ratgeber-Bibliothek</span>
+    <h1>Alle Heimwerker-Tipps</h1>
+    <p>Wöchentlich neue Anleitungen · zuletzt aktualisiert: <span id="last-updated" style="color:rgba(255,255,255,.75);font-weight:600;"></span></p>
   </div>
+</section>
 
-  <div class="post-grid" id="post-grid">
-    <p style="color:#999;">Artikel werden geladen …</p>
+<!-- ── Filter Chips ───────────────────────────────────────────────────── -->
+<div class="blog-controls">
+  <div class="container">
+    <div class="filter-pills" id="filter-pills">
+      <button class="filter-pill active" data-filter="">Alle</button>
+      <button class="filter-pill" data-filter="Böden">🪵 Böden</button>
+      <button class="filter-pill" data-filter="Streichen">🎨 Streichen</button>
+      <button class="filter-pill" data-filter="Fliesen">🔲 Fliesen</button>
+      <button class="filter-pill" data-filter="Bad">🚿 Bad</button>
+      <button class="filter-pill" data-filter="Küche">🍳 Küche</button>
+      <button class="filter-pill" data-filter="Dämmen">🌡️ Dämmen</button>
+      <button class="filter-pill" data-filter="Elektro">⚡ Elektro</button>
+      <button class="filter-pill" data-filter="Garten">🌿 Garten</button>
+      <button class="filter-pill" data-filter="Energie">💡 Energie</button>
+      <button class="filter-pill" data-filter="Dach">🏠 Dach</button>
+      <button class="filter-pill" data-filter="Wartung">🔧 Wartung</button>
+      <button class="filter-pill" data-filter="Holz">🪚 Holz</button>
+    </div>
   </div>
+</div>
 
+<!-- ── Artikel Grid ────────────────────────────────────────────────────── -->
+<main class="blog-main">
+  <div class="container">
+    <div class="post-grid" id="post-grid">
+      <!-- Skeleton -->
+      <div class="post-card" style="opacity:.35;" aria-hidden="true">
+        <div class="card-image" style="background:var(--surface-3);"></div>
+        <div class="card-body">
+          <div style="height:12px;background:var(--surface-3);border-radius:4px;width:50%;margin-bottom:14px;"></div>
+          <div style="height:18px;background:var(--surface-3);border-radius:4px;margin-bottom:8px;"></div>
+          <div style="height:12px;background:var(--surface-3);border-radius:4px;width:75%;"></div>
+        </div>
+      </div>
+    </div>
+    <p id="no-results" style="display:none;color:var(--ink-4);text-align:center;padding:40px 0;">
+      Keine Artikel in dieser Kategorie gefunden. Schau bald wieder rein!
+    </p>
+  </div>
 </main>
 
+<!-- ── Footer ─────────────────────────────────────────────────────────── -->
 <footer class="site-footer">
   <div class="container">
-    <p>© 2025 Heimwerker-Tipps.de &nbsp;|&nbsp; <a href="/impressum.html">Impressum</a> &nbsp;|&nbsp; <a href="/datenschutz.html">Datenschutz</a></p>
-    <p class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">🔨</span>
+          Heimwerker-Tipps
+        </a>
+        <p>Kostenlose Anleitungen für alle, die ihr Zuhause selbst renovieren wollen.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Startseite</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Heimwerker-Tipps.de</span>
+      <span class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</span>
+    </div>
   </div>
 </footer>
 
 <script>
 let allPosts = [];
+let activeFilter = '';
+
+// URL-Parameter auslesen
+const params = new URLSearchParams(window.location.search);
+activeFilter = params.get('filter') || '';
 
 fetch('/blog/posts/index.json')
   .then(r => r.json())
   .then(posts => {
     allPosts = posts;
+
     if (posts.length > 0) {
       document.getElementById('last-updated').textContent = posts[0].date_de;
     }
 
-    // URL-Parameter für Filter auslesen
-    const params = new URLSearchParams(window.location.search);
-    const filterParam = params.get('filter') || '';
-    if (filterParam) {
-      document.getElementById('filter-select').value = filterParam;
+    // Filter-Pill aktivieren wenn URL-Parameter gesetzt
+    if (activeFilter) {
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === activeFilter);
+      });
     }
 
-    renderPosts(filterParam);
+    renderPosts(activeFilter);
   })
   .catch(() => {
     document.getElementById('post-grid').innerHTML =
-      '<p style="color:#999;">Die ersten Artikel erscheinen automatisch ab dem ersten Montag nach dem Go-Live.</p>';
+      '<p style="color:var(--ink-4);grid-column:1/-1;text-align:center;padding:40px 0;">Die ersten Artikel erscheinen automatisch ab dem ersten Montag nach dem Launch.</p>';
   });
 
-document.getElementById('filter-select').addEventListener('change', function() {
-  renderPosts(this.value);
+// Filter-Pill Klick
+document.getElementById('filter-pills').addEventListener('click', e => {
+  const pill = e.target.closest('.filter-pill');
+  if (!pill) return;
+
+  document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+  pill.classList.add('active');
+  activeFilter = pill.dataset.filter;
+
+  // URL aktualisieren (ohne Reload)
+  const url = activeFilter ? `?filter=${encodeURIComponent(activeFilter)}` : window.location.pathname;
+  history.replaceState(null, '', url);
+
+  renderPosts(activeFilter);
 });
 
 function renderPosts(filter) {
   const grid = document.getElementById('post-grid');
+  const noResults = document.getElementById('no-results');
   const filtered = filter ? allPosts.filter(p => p.label === filter) : allPosts;
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<p style="color:#999;">Keine Artikel in dieser Kategorie gefunden.</p>';
+    grid.innerHTML = '';
+    noResults.style.display = 'block';
     return;
   }
 
-  grid.innerHTML = filtered.map(p => `
-    <div class="post-card">
+  noResults.style.display = 'none';
+
+  if (filtered.length >= 3) {
+    grid.classList.add('has-featured');
+  } else {
+    grid.classList.remove('has-featured');
+  }
+
+  grid.innerHTML = filtered.map((p, i) => `
+    <article class="post-card">
       <a class="card-link" href="${p.url}">
-        <img src="${p.og_image}" alt="${p.h1}" loading="lazy" />
-        <div class="post-card-body">
-          <span class="label">${p.label}</span>
+        <div class="card-image">
+          <img src="${p.og_image}" alt="${p.h1}" loading="${i < 3 ? 'eager' : 'lazy'}" />
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="label">${p.label}</span>
+            <time class="card-date">${p.date_de}</time>
+          </div>
           <h2>${p.h1}</h2>
           <p>${p.meta_description}</p>
-          <time>${p.date_de}</time>
+          <span class="card-arrow">Jetzt lesen <span>→</span></span>
         </div>
       </a>
-    </div>
+    </article>
   `).join('');
 }
 </script>
