@@ -1,0 +1,42 @@
+name: Artikel automatisch generieren
+
+on:
+  schedule:
+    # Jeden Montag und Donnerstag um 10:00 Uhr (UTC+1 = 09:00 UTC)
+    - cron: '0 9 * * 1'   # Montag
+    - cron: '0 9 * * 4'   # Donnerstag
+  workflow_dispatch:       # Manuell auslösbar (für Tests)
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install anthropic
+
+      - name: Artikel generieren
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
+        run: python tools/heimwerker_generate_post.py
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "Artikel-Bot"
+          git config user.email "bot@heimwerker-tipps.de"
+          git add blog/posts/ sitemap.xml
+          git diff --staged --quiet || git commit -m "Neuer Artikel: $(date '+%Y-%m-%d')"
+          git push

@@ -1,0 +1,362 @@
+{
+  "1": [
+    {
+      "title": "Heizkosten senken: Diese 7 Maßnahmen helfen sofort",
+      "label": "Energie",
+      "slug_hint": "heizkosten-senken-tipps",
+      "unsplash_query": "home heating radiator winter",
+      "og_image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd"
+    },
+    {
+      "title": "Fenster abdichten im Winter: Schritt-für-Schritt",
+      "label": "Dämmen",
+      "slug_hint": "fenster-abdichten-winter",
+      "unsplash_query": "window insulation draft seal",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    },
+    {
+      "title": "Wasserhahn tropft: Selbst reparieren in 20 Minuten",
+      "label": "Sanitär",
+      "slug_hint": "wasserhahn-tropft-reparieren",
+      "unsplash_query": "dripping faucet plumbing repair",
+      "og_image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd"
+    },
+    {
+      "title": "Kellerfeuchte bekämpfen: Ursachen und Lösungen",
+      "label": "Feuchte",
+      "slug_hint": "kellerfeuchte-bekaempfen",
+      "unsplash_query": "basement moisture damp wall",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "2": [
+    {
+      "title": "Trockenbau Grundlagen: Erste eigene Wand setzen",
+      "label": "Trockenbau",
+      "slug_hint": "trockenbau-wand-setzen-anleitung",
+      "unsplash_query": "drywall construction interior wall",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Holzboden schleifen und versiegeln: Profi-Ergebnis",
+      "label": "Böden",
+      "slug_hint": "holzboden-schleifen-versiegeln",
+      "unsplash_query": "wood floor sanding refinishing",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    },
+    {
+      "title": "Wände glätten: Spachteln für Anfänger",
+      "label": "Wände",
+      "slug_hint": "waende-glaetten-spachteln",
+      "unsplash_query": "wall plastering smoothing renovation",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Elektro-Grundlagen: Was darf ich selbst machen?",
+      "label": "Elektro",
+      "slug_hint": "elektro-selbst-machen-erlaubt",
+      "unsplash_query": "electrical wiring home DIY",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "3": [
+    {
+      "title": "Frühjahrschecklist: Diese 10 Dinge am Haus prüfen",
+      "label": "Wartung",
+      "slug_hint": "fruehjahr-haus-check-liste",
+      "unsplash_query": "spring home maintenance check",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    },
+    {
+      "title": "Terrassendiele verlegen: Anleitung für Einsteiger",
+      "label": "Garten",
+      "slug_hint": "terrassendiele-verlegen-anleitung",
+      "unsplash_query": "wooden deck terrace installation",
+      "og_image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+    },
+    {
+      "title": "Gartenweg selbst pflastern: Material und Technik",
+      "label": "Garten",
+      "slug_hint": "gartenweg-pflastern-selbst",
+      "unsplash_query": "garden path stone paving DIY",
+      "og_image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+    },
+    {
+      "title": "Wand streichen: Saubere Kanten ohne Abkleben",
+      "label": "Streichen",
+      "slug_hint": "wand-streichen-saubere-kanten",
+      "unsplash_query": "painting wall interior clean lines",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "4": [
+    {
+      "title": "Tapeten entfernen: So geht's schnell und sauber",
+      "label": "Renovieren",
+      "slug_hint": "tapeten-entfernen-schnell",
+      "unsplash_query": "wallpaper removal renovation",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Badezimmer fliesen für Anfänger: Schritt für Schritt",
+      "label": "Fliesen",
+      "slug_hint": "badezimmer-fliesen-anleitung",
+      "unsplash_query": "bathroom tile installation DIY",
+      "og_image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+    },
+    {
+      "title": "Laminat verlegen: Alles was du wissen musst",
+      "label": "Böden",
+      "slug_hint": "laminat-verlegen-anleitung",
+      "unsplash_query": "laminate flooring installation",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    },
+    {
+      "title": "Türen streichen und lackieren ohne Streifen",
+      "label": "Streichen",
+      "slug_hint": "tueren-streichen-lackieren",
+      "unsplash_query": "door painting lacquering renovation",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "5": [
+    {
+      "title": "Balkon sanieren auf kleinem Budget",
+      "label": "Balkon",
+      "slug_hint": "balkon-sanieren-guenstig",
+      "unsplash_query": "balcony renovation small budget",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    },
+    {
+      "title": "Außenwand streichen: Fassadenfarbe richtig auftragen",
+      "label": "Fassade",
+      "slug_hint": "aussenwand-streichen-fassade",
+      "unsplash_query": "house facade painting exterior",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    },
+    {
+      "title": "Dach selbst reparieren: Was ist erlaubt?",
+      "label": "Dach",
+      "slug_hint": "dach-selbst-reparieren",
+      "unsplash_query": "roof repair maintenance tiles",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Insektenschutz einbauen: Fliegengitter richtig montieren",
+      "label": "Fenster",
+      "slug_hint": "insektenschutz-fliegengitter-montieren",
+      "unsplash_query": "insect screen window installation",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "6": [
+    {
+      "title": "Sonnenschutz nachrüsten: Markise oder Außenrollo?",
+      "label": "Sonnenschutz",
+      "slug_hint": "sonnenschutz-markise-aussenrollo",
+      "unsplash_query": "awning sun protection terrace summer",
+      "og_image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+    },
+    {
+      "title": "Poolbau im Garten: Was ist wirklich nötig?",
+      "label": "Garten",
+      "slug_hint": "pool-garten-selbst-bauen",
+      "unsplash_query": "garden pool backyard summer",
+      "og_image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+    },
+    {
+      "title": "Küchenrückwand selbst gestalten: 5 Ideen",
+      "label": "Küche",
+      "slug_hint": "kueche-rueckwand-ideen-selbst",
+      "unsplash_query": "kitchen backsplash tile design",
+      "og_image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136"
+    },
+    {
+      "title": "Mauerwerk verfugen: Anleitung für Außenwände",
+      "label": "Mauerwerk",
+      "slug_hint": "mauerwerk-verfugen-aussen",
+      "unsplash_query": "brick wall pointing mortar repair",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    }
+  ],
+  "7": [
+    {
+      "title": "Schimmel im Bad entfernen und dauerhaft verhindern",
+      "label": "Feuchte",
+      "slug_hint": "schimmel-bad-entfernen-verhindern",
+      "unsplash_query": "mold bathroom moisture prevention",
+      "og_image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+    },
+    {
+      "title": "Gartenhaus bauen: Fundament, Bausatz oder Massiv?",
+      "label": "Garten",
+      "slug_hint": "gartenhaus-bauen-fundament",
+      "unsplash_query": "garden shed house building wood",
+      "og_image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+    },
+    {
+      "title": "Steckdose nachrüsten: Was du beachten musst",
+      "label": "Elektro",
+      "slug_hint": "steckdose-nachruesten-anleitung",
+      "unsplash_query": "electrical outlet installation wall",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    },
+    {
+      "title": "Regale selbst bauen: Einfache Konstruktionen",
+      "label": "Holz",
+      "slug_hint": "regal-selbst-bauen-holz",
+      "unsplash_query": "shelf building wood DIY carpentry",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    }
+  ],
+  "8": [
+    {
+      "title": "Dachboden ausbauen: Genehmigung und Dämmung",
+      "label": "Dach",
+      "slug_hint": "dachboden-ausbauen-genehmigung",
+      "unsplash_query": "attic conversion renovation insulation",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Wärmepumpe verstehen: Was bringt sie wirklich?",
+      "label": "Energie",
+      "slug_hint": "waermepumpe-lohnt-sich",
+      "unsplash_query": "heat pump energy efficiency home",
+      "og_image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd"
+    },
+    {
+      "title": "Fliesen verfugen: Tipps für ein sauberes Ergebnis",
+      "label": "Fliesen",
+      "slug_hint": "fliesen-verfugen-tipps",
+      "unsplash_query": "tile grouting bathroom clean",
+      "og_image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+    },
+    {
+      "title": "Holzmöbel auffrischen ohne Schleifen",
+      "label": "Holz",
+      "slug_hint": "holzmoebel-auffrischen-renovieren",
+      "unsplash_query": "wood furniture restoration upcycling",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    }
+  ],
+  "9": [
+    {
+      "title": "Herbstvorbereitung: Garten und Haus fit machen",
+      "label": "Wartung",
+      "slug_hint": "herbst-haus-garten-vorbereiten",
+      "unsplash_query": "autumn garden home maintenance",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    },
+    {
+      "title": "Rollläden reparieren und einstellen",
+      "label": "Fenster",
+      "slug_hint": "rollladen-reparieren-einstellen",
+      "unsplash_query": "shutters roller blinds repair",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    },
+    {
+      "title": "Parkett verlegen: Kleben, klicken oder schwimmend?",
+      "label": "Böden",
+      "slug_hint": "parkett-verlegen-methoden",
+      "unsplash_query": "parquet floor installation hardwood",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    },
+    {
+      "title": "Außentüre einbauen: Schritt-für-Schritt Anleitung",
+      "label": "Türen",
+      "slug_hint": "aussentuer-einbauen-anleitung",
+      "unsplash_query": "exterior door installation entrance",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    }
+  ],
+  "10": [
+    {
+      "title": "Heizung winterfest machen: Diese Checks retten die Saison",
+      "label": "Heizung",
+      "slug_hint": "heizung-winterfest-machen",
+      "unsplash_query": "heating system boiler maintenance winter",
+      "og_image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd"
+    },
+    {
+      "title": "Dachrinne reinigen und reparieren",
+      "label": "Dach",
+      "slug_hint": "dachrinne-reinigen-reparieren",
+      "unsplash_query": "gutter cleaning repair roof drainage",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Keller trocken legen: Methoden im Überblick",
+      "label": "Feuchte",
+      "slug_hint": "keller-trocken-legen-methoden",
+      "unsplash_query": "basement waterproofing dry renovation",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    },
+    {
+      "title": "LED-Beleuchtung nachrüsten: Kosten und Einsparung",
+      "label": "Elektro",
+      "slug_hint": "led-beleuchtung-nachrüsten",
+      "unsplash_query": "LED lighting home renovation energy",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "11": [
+    {
+      "title": "Badezimmer modernisieren: Günstig und schnell",
+      "label": "Bad",
+      "slug_hint": "badezimmer-modernisieren-guenstig",
+      "unsplash_query": "bathroom renovation modern budget",
+      "og_image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+    },
+    {
+      "title": "Küche selbst renovieren: Was ist realistisch?",
+      "label": "Küche",
+      "slug_hint": "kueche-selbst-renovieren",
+      "unsplash_query": "kitchen renovation DIY modern",
+      "og_image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136"
+    },
+    {
+      "title": "Fugenmasse erneuern: Silikon und Acryl richtig nutzen",
+      "label": "Sanitär",
+      "slug_hint": "fugenmasse-silikon-erneuern",
+      "unsplash_query": "caulking silicone sealant bathroom",
+      "og_image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+    },
+    {
+      "title": "Wandfarbe wählen: Welche Farbe für welchen Raum?",
+      "label": "Streichen",
+      "slug_hint": "wandfarbe-waehlen-raumwirkung",
+      "unsplash_query": "wall color paint interior design",
+      "og_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+    }
+  ],
+  "12": [
+    {
+      "title": "Winterschäden vorbeugen: Diese Maßnahmen schützen dein Haus",
+      "label": "Wartung",
+      "slug_hint": "winterschaeden-vorbeugen-haus",
+      "unsplash_query": "winter house protection frost damage",
+      "og_image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
+    },
+    {
+      "title": "Treppe renovieren: Knarren beseitigen und streichen",
+      "label": "Renovieren",
+      "slug_hint": "treppe-renovieren-knarren",
+      "unsplash_query": "staircase renovation wood painting",
+      "og_image": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14"
+    },
+    {
+      "title": "Dämmung nachrüsten: Oberste Geschossdecke selbst dämmen",
+      "label": "Dämmen",
+      "slug_hint": "daemmung-nachruesten-geschossdecke",
+      "unsplash_query": "insulation ceiling attic energy saving",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    },
+    {
+      "title": "Jahresrückblick: Die 10 häufigsten Heimwerker-Fehler",
+      "label": "Ratgeber",
+      "slug_hint": "heimwerker-fehler-vermeiden",
+      "unsplash_query": "DIY mistakes tools home improvement",
+      "og_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heimwerker-Tipps – Praktische Ratgeber für dein Zuhause</title>
+  <meta name="description" content="Kostenlose Heimwerker-Ratgeber: Renovieren, Streichen, Fliesen, Dämmen und mehr. Schritt-für-Schritt Anleitungen von erfahrenen Handwerkern." />
+  <link rel="canonical" href="https://USERNAME.github.io/heimwerker-tipps-de/" />
+
+  <meta property="og:title" content="Heimwerker-Tipps – Praktische Ratgeber für dein Zuhause" />
+  <meta property="og:description" content="Kostenlose Heimwerker-Ratgeber: Renovieren, Streichen, Fliesen, Dämmen und mehr." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google AdSense – nach Freischaltung aktivieren -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">🔨 Heimwerker-Tipps</a>
+    <nav>
+      <a href="/">Start</a>
+      <a href="/blog/">Alle Artikel</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Heimwerken leicht gemacht</h1>
+    <p>Kostenlose Schritt-für-Schritt Anleitungen für Renovierung, Streichen, Fliesen, Dämmen und mehr – direkt umsetzbar.</p>
+    <a href="/blog/" style="display:inline-block;background:var(--primary);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;font-size:1.05rem;">Alle Ratgeber ansehen →</a>
+  </div>
+</section>
+
+<!-- AdSense Banner (nach Freischaltung aktivieren) -->
+<!--
+<div class="container" style="padding-top:24px;">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+-->
+
+<section class="section" style="background:#f8f6f3;">
+  <div class="container">
+    <h2 class="section-title">Themen</h2>
+    <p class="section-subtitle">Wähle ein Thema das dich interessiert</p>
+    <div class="category-grid">
+      <a href="/blog/?filter=Böden" class="category-card"><span class="icon">🪵</span>Böden</a>
+      <a href="/blog/?filter=Wände" class="category-card"><span class="icon">🎨</span>Streichen</a>
+      <a href="/blog/?filter=Fliesen" class="category-card"><span class="icon">🔲</span>Fliesen</a>
+      <a href="/blog/?filter=Bad" class="category-card"><span class="icon">🚿</span>Bad</a>
+      <a href="/blog/?filter=Küche" class="category-card"><span class="icon">🍳</span>Küche</a>
+      <a href="/blog/?filter=Dämmen" class="category-card"><span class="icon">🌡️</span>Dämmen</a>
+      <a href="/blog/?filter=Elektro" class="category-card"><span class="icon">⚡</span>Elektro</a>
+      <a href="/blog/?filter=Garten" class="category-card"><span class="icon">🌿</span>Garten</a>
+      <a href="/blog/?filter=Energie" class="category-card"><span class="icon">💡</span>Energie</a>
+      <a href="/blog/?filter=Dach" class="category-card"><span class="icon">🏠</span>Dach</a>
+      <a href="/blog/?filter=Wartung" class="category-card"><span class="icon">🔧</span>Wartung</a>
+      <a href="/blog/?filter=Holz" class="category-card"><span class="icon">🪚</span>Holz</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Neueste Artikel</h2>
+    <p class="section-subtitle">Frisch erschienen – jede Woche neue Ratgeber</p>
+    <div class="post-grid" id="latest-posts">
+      <p style="color:#999;">Artikel werden geladen …</p>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="/blog/" style="display:inline-block;border:2px solid var(--primary);color:var(--primary);padding:12px 24px;border-radius:8px;font-weight:700;">Alle Artikel ansehen →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Heimwerker-Tipps.de &nbsp;|&nbsp; <a href="/impressum.html">Impressum</a> &nbsp;|&nbsp; <a href="/datenschutz.html">Datenschutz</a></p>
+    <p class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+  </div>
+</footer>
+
+<script>
+// Neueste Artikel aus index.json laden
+fetch('/blog/posts/index.json')
+  .then(r => r.json())
+  .then(posts => {
+    const grid = document.getElementById('latest-posts');
+    const latest = posts.slice(0, 6);
+    if (latest.length === 0) {
+      grid.innerHTML = '<p style="color:#999;">Bald verfügbar – die ersten Artikel erscheinen automatisch.</p>';
+      return;
+    }
+    grid.innerHTML = latest.map(p => `
+      <div class="post-card">
+        <a class="card-link" href="${p.url}">
+          <img src="${p.og_image}" alt="${p.h1}" loading="lazy" />
+          <div class="post-card-body">
+            <span class="label">${p.label}</span>
+            <h2>${p.h1}</h2>
+            <p>${p.meta_description}</p>
+            <time>${p.date_de}</time>
+          </div>
+        </a>
+      </div>
+    `).join('');
+  })
+  .catch(() => {
+    document.getElementById('latest-posts').innerHTML =
+      '<p style="color:#999;">Artikel erscheinen ab dem ersten Montag automatisch.</p>';
+  });
+</script>
+
+</body>
+</html>

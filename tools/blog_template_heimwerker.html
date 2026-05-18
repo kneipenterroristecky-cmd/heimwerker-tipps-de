@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}} – Heimwerker-Tipps</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <link rel="canonical" href="{{POST_URL}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:image" content="{{OG_IMAGE}}" />
+  <meta property="og:url" content="{{POST_URL}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{H1}}",
+    "description": "{{META_DESCRIPTION}}",
+    "image": "{{OG_IMAGE}}",
+    "datePublished": "{{DATE_ISO}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Heimwerker-Tipps.de"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Google AdSense – nach Freischaltung Konto-ID eintragen -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="{{SITE_URL}}/" class="logo">🔨 Heimwerker-Tipps</a>
+    <nav>
+      <a href="{{SITE_URL}}/">Start</a>
+      <a href="{{SITE_URL}}/blog/">Alle Artikel</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container article-page">
+
+  <!-- AdSense Top Banner (nach Freischaltung aktivieren) -->
+  <!--
+  <div class="ad-banner">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  -->
+
+  <article>
+    <div class="article-meta">
+      <span class="label">{{LABEL}}</span>
+      <time datetime="{{DATE_ISO}}">{{DATE_DE}}</time>
+    </div>
+
+    <h1>{{H1}}</h1>
+
+    <img src="{{OG_IMAGE}}" alt="{{H1}}" class="hero-image" loading="lazy" />
+
+    <div class="article-content">
+      {{CONTENT}}
+    </div>
+
+    <!-- AdSense Mid-Article (nach Freischaltung aktivieren) -->
+    <!--
+    <div class="ad-mid">
+      <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    -->
+
+  </article>
+
+  <!-- AdSense Bottom Banner (nach Freischaltung aktivieren) -->
+  <!--
+  <div class="ad-banner">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  -->
+
+  <div class="back-link">
+    <a href="{{SITE_URL}}/blog/">← Alle Artikel</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Heimwerker-Tipps.de &nbsp;|&nbsp; <a href="{{SITE_URL}}/impressum.html">Impressum</a> &nbsp;|&nbsp; <a href="{{SITE_URL}}/datenschutz.html">Datenschutz</a></p>
+    <p class="affiliate-hint">* Amazon-Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+  </div>
+</footer>
+
+</body>
+</html>
