@@ -543,36 +543,79 @@ a:hover { text-decoration: underline; }
    TRUST BAR / FEATURES
    ═══════════════════════════════════════════════════════════════ */
 .trust-section {
-  background: var(--ink);
-  color: #fff;
-  padding: 56px 0;
+  background: #111;
+  padding: 64px 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  gap: 0;
+  align-items: center;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 80px;
+  background: rgba(255,255,255,.08);
+  justify-self: center;
 }
 
 .trust-item {
   text-align: center;
+  padding: 8px 32px;
 }
 
-.trust-icon {
-  font-size: 2rem;
-  margin-bottom: 12px;
+.trust-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--c) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 35%, transparent);
+  color: var(--c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  transition: var(--transition);
+}
+
+.trust-item:hover .trust-icon-wrap {
+  background: color-mix(in srgb, var(--c) 25%, transparent);
+  transform: translateY(-2px);
 }
 
 .trust-item h3 {
-  font-size: 1rem;
+  font-size: .97rem;
   font-weight: 700;
-  margin-bottom: 6px;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
 }
 
 .trust-item p {
-  font-size: .85rem;
-  color: rgba(255,255,255,.55);
-  line-height: 1.6;
+  font-size: .83rem;
+  color: rgba(255,255,255,.45);
+  line-height: 1.65;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .trust-divider { display: none; }
+  .trust-item {
+    padding: 28px 16px;
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: var(--radius);
+    margin: 4px;
+  }
+  .trust-item p { max-width: none; }
 }
 
 /* ═══════════════════════════════════════════════════════════════
