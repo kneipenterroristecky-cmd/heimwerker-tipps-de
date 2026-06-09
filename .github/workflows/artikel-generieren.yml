@@ -1,11 +1,7 @@
 name: Artikel automatisch generieren
 
 on:
-  schedule:
-    # Jeden Montag und Donnerstag um 10:00 Uhr (UTC+1 = 09:00 UTC)
-    - cron: '0 9 * * 1'   # Montag
-    - cron: '0 9 * * 4'   # Donnerstag
-  workflow_dispatch:       # Manuell auslösbar (für Tests)
+  workflow_dispatch:       # Nur manuell auslösbar
 
 permissions:
   contents: write
